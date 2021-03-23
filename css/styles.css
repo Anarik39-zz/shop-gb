@@ -6,6 +6,9 @@ ul,
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 body {
   min-height: 100vh;
   font-family: Lato, sans-serif;
@@ -66,9 +69,8 @@ header {
 .promo_h1_FASHION {
   color: #f16d7f;
 }
-
 .main_index {
-  padding: 65px 0 95px;
+  padding: 65px 0 109px;
 }
 .offers {
   padding-bottom: 96px;
@@ -189,9 +191,9 @@ header {
   color: #f16d7f;
 }
 .products_button {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
+  text-align: center;
+}
+.products_button_link {
   font-size: 16px;
   line-height: 19px;
   color: #f26376;
@@ -201,7 +203,7 @@ header {
   outline: none;
   cursor: pointer;
 }
-.products_button:hover {
+.products_button_link:hover {
   color: white;
   background: #f16d7f;
 }
