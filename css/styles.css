@@ -14,6 +14,8 @@ body {
   font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
 }
 .container {
   padding: 0 calc(50% - 1140px / 2);
@@ -107,6 +109,7 @@ header {
 }
 
 .products_heading {
+  font-weight: normal;
   text-align: center;
   font-size: 30px;
   line-height: 36px;
@@ -174,6 +177,7 @@ header {
   padding: 25px 26px 20px 16px;
 }
 .card_heading {
+  font-weight: normal;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
@@ -227,6 +231,7 @@ header {
   margin-bottom: 25px;
 }
 .advantage_heading {
+  font-weight: normal;
   font-size: 19.96px;
   line-height: 24px;
   color: #fbfbfb;
@@ -256,10 +261,11 @@ header {
   margin-bottom: 30px;
 }
 .feedback_info_text {
+  font-style: italic;
   font-size: 20px;
   line-height: 24px;
   color: #222224;
-  width: 359px;
+  max-width: 359px;
 }
 .feedback_subscribe {
   display: flex;
@@ -267,6 +273,7 @@ header {
   align-items: center;
 }
 .feedback_subscribe_heading {
+  font-weight: normal;
   font-size: 18px;
   line-height: 167.2%;
   color: #222224;
