@@ -9,6 +9,7 @@ li {
 a {
   text-decoration: none;
 }
+
 body {
   min-height: 100vh;
   font-family: "Lato", sans-serif;
@@ -118,13 +119,13 @@ header {
   margin-bottom: 6px;
 }
 .products_text {
+  margin-bottom: 48px;
   text-align: center;
   font-size: 14px;
   line-height: 17px;
   color: #9f9f9f;
 }
 .cards {
-  padding: 48px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -196,6 +197,7 @@ header {
   color: #f16d7f;
 }
 .products_button {
+  margin-top: 63px;
   text-align: center;
 }
 .products_button_link {
@@ -356,4 +358,67 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.breadcrumbs {
+  height: 148px;
+  background: #f8f3f4;
+}
+.breadcrumbs_display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.breadcrumb_heading {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+.breadcrumbs_link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.breadcrumbs_link::after {
+  content: " / ";
+}
+.breadcrumbs_link:last-child {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+.breadcrumbs_link:last-child::after {
+  content: none;
+}
+
+.main_catalog {
+  padding: 51px 0 96px;
+}
+
+.pagination {
+  width: 284px;
+  margin-top: 48px;
+}
+.pagination_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+.pagination_li {
+  flex-grow: 1;
+}
+.pagination_link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #c4c4c4;
+}
+.pagination_link_first {
+  color: #ef5b70;
 }
