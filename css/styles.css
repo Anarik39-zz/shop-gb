@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .container {
   padding: 0 calc(50% - 1140px / 2);
 }
@@ -22,6 +23,7 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+
 header {
   background-color: #222222;
   padding: 18px 0 19px;
@@ -69,6 +71,7 @@ header {
 .promo_h1_FASHION {
   color: #f16d7f;
 }
+
 .main_index {
   padding: 65px 0 109px;
 }
