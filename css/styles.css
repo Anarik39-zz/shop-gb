@@ -398,7 +398,24 @@ footer {
 .main_catalog {
   padding: 51px 0 96px;
 }
-
+.customization {
+  padding-bottom: 64px;
+  display: flex;
+}
+.filter_input {
+  appearance: none;
+}
+.filter_label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.filter_input:checked + .filter_label,
+.filter_input:checked + .filter_icon {
+  color: #ef5b70;
+  fill: #ef5b70;
+}
 .pagination {
   width: 284px;
   margin-top: 48px;
