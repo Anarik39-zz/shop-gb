@@ -47,7 +47,7 @@ header {
 }
 .promo_index_background {
   height: 764px;
-  background-image: url(../img/promo_men.png);
+  background-image: url(../img/promo-men.png);
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -141,7 +141,7 @@ header {
 .card_img_box {
   position: relative;
 }
-.card_background {
+.card-background {
   position: absolute;
   visibility: hidden;
   width: 100%;
@@ -169,10 +169,10 @@ header {
   cursor: pointer;
 }
 .card_button::before {
-  content: url(../img/card_busket.svg);
+  content: url(../img/card-busket.svg);
   padding-right: 11px;
 }
-.card:hover .card_background {
+.card:hover .card-background {
   visibility: visible;
 }
 .card_info {
@@ -249,7 +249,7 @@ header {
 
 .feedback {
   background: rgba(244, 244, 244, 0.7);
-  background-image: url(../img/feedback_background.png);
+  background-image: url(../img/feedback-background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -402,7 +402,14 @@ footer {
   padding-bottom: 64px;
   display: flex;
 }
-.filter_input {
+
+.filter {
+  width: 360px;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+.filter_input,
+.sorting_input {
   appearance: none;
 }
 .filter_label {
@@ -410,12 +417,33 @@ footer {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  cursor: pointer;
+}
+.filter_icon {
+  padding-left: 11px;
 }
 .filter_input:checked + .filter_label,
 .filter_input:checked + .filter_icon {
   color: #ef5b70;
   fill: #ef5b70;
 }
+
+.sorting {
+  padding-left: 30px;
+  display: flex;
+}
+.sorting_label {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  padding-right: 28px;
+}
+.sorting_label::after {
+  content: url(../img/sort-icon.svg);
+  padding-left: 10px;
+}
+
 .pagination {
   width: 284px;
   margin-top: 48px;

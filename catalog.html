@@ -40,28 +40,38 @@
       </div>
    </section>
    <main class="main_catalog">
-      <div class="customization center">
+      <section class="customization center">
          <div class="filter">
             <input class="filter_input" type="checkbox" id="filter_id">
-            <label class="filter_label" for="filter_id">FILTER <svg class="filter_icon" width="15" height="10"
+            <label class="filter_label" for="filter_id">FILTER<svg class="filter_icon" width="15" height="10"
                   viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
                   <path
                      d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
-               </svg>
-            </label>
+               </svg></label>
          </div>
          <div class="sorting">
-
+            <div class="sorting_trending_now">
+               <input class="sorting_input" type="checkbox" id="sorting_trending_now_id">
+               <label class="sorting_label" for="sorting_trending_now_id">TRENDING NOW</label>
+            </div>
+            <div class="sorting_size">
+               <input class="sorting_input" type="checkbox" id="sorting_size_id">
+               <label class="sorting_label" for="sorting_size_id">SIZE</label>
+            </div>
+            <div class="sorting_price">
+               <input class="sorting_input" type="checkbox" id="sorting_price_id">
+               <label class="sorting_label" for="sorting_price_id">PRICE</label>
+            </div>
          </div>
-      </div>
+      </section>
       <div class="cards center">
          <div class="card">
             <div class="card_img_box">
-               <div class="card_background">
+               <div class="card-background">
                   <button class="card_button">Add to
                      Cart</button>
                </div>
-               <img src="img/card-1_index.png" alt="photo" class="card_img">
+               <img src="img/card-1-index.png" alt="photo" class="card_img">
             </div>
             <div class="card_info">
                <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
@@ -74,10 +84,10 @@
          </div>
          <div class="card">
             <div class="card_img_box">
-               <div class="card_background">
+               <div class="card-background">
                   <button class="card_button">Add to Cart</button>
                </div>
-               <img src="img/card-2_index.png" alt="photo" class="card_img">
+               <img src="img/card-2-catalog.png" alt="photo" class="card_img">
             </div>
             <div class="card_info">
                <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
@@ -90,11 +100,62 @@
          </div>
          <div class="card">
             <div class="card_img_box">
-               <div class="card_background">
+               <div class="card-background">
                   <button class="card_button">Add to
                      Cart</button>
                </div>
-               <img src="img/card-3_index.png" alt="photo" class="card_img">
+               <img src="img/card-3-index.png" alt="photo" class="card_img">
+            </div>
+            <div class="card_info">
+               <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
+               <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                  cool
+                  Kym Ellery teams up with Moda
+                  Operandi.</p>
+               <p class="card_price">$52.00</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card_img_box">
+               <div class="card-background">
+                  <button class="card_button">Add to
+                     Cart</button>
+               </div>
+               <img src="img/card-4-index.png" alt="photo" class="card_img">
+            </div>
+            <div class="card_info">
+               <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
+               <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                  cool
+                  Kym Ellery teams up with Moda
+                  Operandi.</p>
+               <p class="card_price">$52.00</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card_img_box">
+               <div class="card-background">
+                  <button class="card_button">Add to
+                     Cart</button>
+               </div>
+               <img src="img/card-5-catalog.png" alt="photo" class="card_img">
+            </div>
+            <div class="card_info">
+               <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
+               <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                  cool
+                  Kym Ellery teams up with Moda
+                  Operandi.</p>
+               <p class="card_price">$52.00</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card_img_box">
+               <div class="card-background">
+                  <button class="card_button">Add to
+                     Cart</button>
+               </div>
+               <img src="img/card-6-catalog.png" alt="photo" class="card_img">
             </div>
             <div class="card_info">
                <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
@@ -107,11 +168,11 @@
          </div>
          <div class="card card_margin">
             <div class="card_img_box">
-               <div class="card_background">
+               <div class="card-background">
                   <button class="card_button">Add to
                      Cart</button>
                </div>
-               <img src="img/card-4_index.png" alt="photo" class="card_img">
+               <img src="img/card-7-catalog.png" alt="photo" class="card_img">
             </div>
             <div class="card_info">
                <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
@@ -124,11 +185,11 @@
          </div>
          <div class="card card_margin">
             <div class="card_img_box">
-               <div class="card_background">
+               <div class="card-background">
                   <button class="card_button">Add to
                      Cart</button>
                </div>
-               <img src="img/card-5_index.png" alt="photo" class="card_img">
+               <img src="img/card-8-catalog.png" alt="photo" class="card_img">
             </div>
             <div class="card_info">
                <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
@@ -141,11 +202,11 @@
          </div>
          <div class="card card_margin">
             <div class="card_img_box">
-               <div class="card_background">
+               <div class="card-background">
                   <button class="card_button">Add to
                      Cart</button>
                </div>
-               <img src="img/card-6_index.png" alt="photo" class="card_img">
+               <img src="img/card-9-catalog.png" alt="photo" class="card_img">
             </div>
             <div class="card_info">
                <a class="card_heading" href="#">ELLERY X M'O CAPSULE</a>
@@ -159,7 +220,7 @@
       </div>
       <div class="pagination center">
          <ul class="pagination_list">
-            <li class="pagination_li"><a class="pagination_link" href="#"><img src="img/pagination_icon_left.svg"
+            <li class="pagination_li"><a class="pagination_link" href="#"><img src="img/pagination-icon-left.svg"
                      alt="left"></a></li>
             <li class="pagination_li"><a class="pagination_link pagination_link_first">1</a></li>
             <li class="pagination_li"><a class="pagination_link" href="#">2</a></li>
@@ -169,7 +230,7 @@
             <li><a class="pagination_link" href="#">6</a></li>
             <li><a class="pagination_link">.....</a></li>
             <li class="pagination_li"><a class="pagination_link" href="#">20</a></li>
-            <li><a class="pagination_link" href="#"><img src="img/pagination_icon_right.svg" alt="right"></a>
+            <li><a class="pagination_link" href="#"><img src="img/pagination-icon-right.svg" alt="right"></a>
             </li>
          </ul>
       </div>
@@ -202,7 +263,7 @@
    <aside class="feedback">
       <div class="center feedback_display">
          <div class="feedback_info">
-            <img class="feedback_info_img" src="img/feedback_agent.png" alt="photo">
+            <img class="feedback_info_img" src="img/feedback-agent.png" alt="photo">
             <p class="feedback_info_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
                condimentum“</p>
          </div>
