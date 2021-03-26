@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/style.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-   <header>
+   <header class="header">
       <section class="center header_display">
          <nav class="header_left">
             <a href="index.html" class="header_logo_link"><img class="header_logo_img" src="img/logo.png"
@@ -31,7 +31,7 @@
    </header>
    <section class="breadcrumbs">
       <div class="center breadcrumbs_display">
-         <h2 class="breadcrumb_heading">NEW ARRIVALS</h2>
+         <h2 class="breadcrumbs_heading">NEW ARRIVALS</h2>
          <div class="breadcrumbs_links">
             <a class="breadcrumbs_link" href="index.html">HOME</a>
             <a class="breadcrumbs_link" href="#">MEN</a>
@@ -41,26 +41,26 @@
    </section>
    <main class="main_catalog">
       <section class="customization center">
-         <div class="filter">
-            <input class="filter_input" type="checkbox" id="filter_id">
-            <label class="filter_label" for="filter_id">FILTER<svg class="filter_icon" width="15" height="10"
-                  viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+         <div class="customization_filter">
+            <input class="customization_filter_input" type="checkbox" id="filter_id">
+            <label class="customization_filter_label" for="filter_id">FILTER<svg class="customization_filter_icon"
+                  width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
                   <path
                      d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
                </svg></label>
          </div>
-         <div class="sorting">
-            <div class="sorting_trending_now">
-               <input class="sorting_input" type="checkbox" id="sorting_trending_now_id">
-               <label class="sorting_label" for="sorting_trending_now_id">TRENDING NOW</label>
+         <div class="customization_sorting">
+            <div class="customization_sorting_trending_now">
+               <input class="customization_sorting_input" type="checkbox" id="sorting_trending_now_id">
+               <label class="customization_sorting_label" for="sorting_trending_now_id">TRENDING NOW</label>
             </div>
-            <div class="sorting_size">
-               <input class="sorting_input" type="checkbox" id="sorting_size_id">
-               <label class="sorting_label" for="sorting_size_id">SIZE</label>
+            <div class="customization_sorting_size">
+               <input class="customization_sorting_input" type="checkbox" id="sorting_size_id">
+               <label class="customization_sorting_label" for="sorting_size_id">SIZE</label>
             </div>
-            <div class="sorting_price">
-               <input class="sorting_input" type="checkbox" id="sorting_price_id">
-               <label class="sorting_label" for="sorting_price_id">PRICE</label>
+            <div class="customization_sorting_price">
+               <input class="customization_sorting_input" type="checkbox" id="sorting_price_id">
+               <label class="customization_sorting_label" for="sorting_price_id">PRICE</label>
             </div>
          </div>
       </section>
@@ -220,17 +220,17 @@
       </div>
       <div class="pagination center">
          <ul class="pagination_list">
-            <li class="pagination_li"><a class="pagination_link" href="#"><img src="img/pagination-icon-left.svg"
-                     alt="left"></a></li>
-            <li class="pagination_li"><a class="pagination_link pagination_link_first">1</a></li>
-            <li class="pagination_li"><a class="pagination_link" href="#">2</a></li>
-            <li class="pagination_li"><a class="pagination_link" href="#">3</a></li>
-            <li class="pagination_li"><a class="pagination_link" href="#">4</a></li>
-            <li class="pagination_li"><a class="pagination_link" href="#">5</a></li>
-            <li><a class="pagination_link" href="#">6</a></li>
-            <li><a class="pagination_link">.....</a></li>
-            <li class="pagination_li"><a class="pagination_link" href="#">20</a></li>
-            <li><a class="pagination_link" href="#"><img src="img/pagination-icon-right.svg" alt="right"></a>
+            <li class="pagination_list_li"><a class="pagination_list_li_link" href="#"><img
+                     src="img/pagination-icon-left.svg" alt="left"></a></li>
+            <li class="pagination_list_li"><a class="pagination_list_li_link pagination_list_li_link_first">1</a></li>
+            <li class="pagination_list_li"><a class="pagination_list_li_link" href="#">2</a></li>
+            <li class="pagination_list_li"><a class="pagination_list_li_link" href="#">3</a></li>
+            <li class="pagination_list_li"><a class="pagination_list_li_link" href="#">4</a></li>
+            <li class="pagination_list_li"><a class="pagination_list_li_link" href="#">5</a></li>
+            <li><a class="pagination_list_li_link" href="#">6</a></li>
+            <li><a class="pagination_list_li_link">.....</a></li>
+            <li class="pagination_list_li"><a class="pagination_list_li_link" href="#">20</a></li>
+            <li><a class="pagination_list_li_link" href="#"><img src="img/pagination-icon-right.svg" alt="right"></a>
             </li>
          </ul>
       </div>
@@ -268,20 +268,21 @@
                condimentum“</p>
          </div>
          <div class="feedback_subscribe">
-            <h3 class="feedback_subscribe_heading"><span class="heading_SUBSCRIBE">SUBSCRIBE</span><br>FOR OUR
+            <h3 class="feedback_subscribe_heading"><span class="feedback_subscribe_heading_span">SUBSCRIBE</span><br>FOR
+               OUR
                NEWLETTER AND
                PROMOTION</h3>
-            <form action="#" class="form_subcribe">
-               <input class="feedback_subscribe_input" type="email" placeholder="Enter Your Email">
-               <button class="feedback_subscribe_button" type="submit">Subscribe</button>
+            <form action="#" class="feedback_subscribe_form">
+               <input class="feedback_subscribe_form_input" type="email" placeholder="Enter Your Email">
+               <button class="feedback_subscribe_form_button" type="submit">Subscribe</button>
             </form>
          </div>
       </div>
    </aside>
-   <footer>
+   <footer class="footer">
       <section class="center footer_display">
-         <p class="copyright">© 2021 Brand All Rights Reserved.</p>
-         <ul class="socials">
+         <p class="footer_copyright">© 2021 Brand All Rights Reserved.</p>
+         <ul class="footer_socials">
             <li class="social"><a class="social_link" href="#"><svg class="social_img" width="9" height="15"
                      viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
                      <path
