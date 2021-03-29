@@ -2,29 +2,29 @@
   background-color: #222224;
   padding: 104px 0;
   text-align: center;
-  &_display {
+  &-display {
     display: flex;
     justify-content: space-between;
   }
 }
 .advantage {
-  &_img_delivery {
+  &__img-delivery {
     margin-bottom: 28px;
   }
-  &_img_sales {
+  &__img-sales {
     margin-bottom: 20px;
   }
-  &_img_guarantee {
+  &__img-guarantee {
     margin-bottom: 25px;
   }
-  &_heading {
+  &__heading {
     font-weight: normal;
     font-size: 19.96px;
     line-height: 24px;
     color: #fbfbfb;
     margin-bottom: 16px;
   }
-  &_text {
+  &__text {
     font-weight: 300;
     font-size: 13.972px;
     line-height: 17px;

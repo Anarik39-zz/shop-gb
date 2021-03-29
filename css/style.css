@@ -423,13 +423,168 @@ header {
   color: #ef5b70;
 }
 
+.main-product {
+  padding-bottom: 128px;
+}
+
+.slider {
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px 0 42px;
+  border: 1px solid #eaeaea;
+  position: relative;
+}
+
+.slider__button {
+  width: 47px;
+  height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  border: none;
+  outline: none;
+}
+
+.slider__button:hover .slider__button-svg {
+  fill: #f16d7f;
+}
+
+.slider__button-svg-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.description {
+  margin-bottom: 129px;
+  position: relative;
+  margin-top: -65px;
+}
+
+.description-display {
+  border: 1px solid #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 65px 0;
+  background: #ffffff;
+}
+
+.description__heading-pink {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+
+.description__hr-pink {
+  background: #ef5b70;
+  width: 63px;
+  height: 3px;
+  margin: 12px 0;
+  border: none;
+}
+
+.description__heading {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4d4d4d;
+}
+
+.description__text {
+  max-width: 554px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5e5e5e;
+  padding: 48px 0 32px;
+}
+
+.description__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ef5b70;
+}
+
+.description__hr {
+  width: 642px;
+  height: 1px;
+  border: none;
+  background: #eaeaea;
+  margin: 65px 0;
+}
+
+.description__button {
+  margin-top: 48px;
+  border: 1px solid #ff6a6a;
+  outline: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  background: #ffffff;
+  padding-right: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.description__button::before {
+  content: url(../img/product-busket.svg);
+  padding-right: 23px;
+  padding: 15px 23px 7px 24px;
+}
+
+.sorting-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sorting-product__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.sorting-product__label {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  padding-right: 23px;
+}
+
+.sorting-product__label::after {
+  content: url(../img/sort-icon.svg);
+  padding-left: 9px;
+}
+
 .advantages {
   background-color: #222224;
   padding: 104px 0;
   text-align: center;
 }
 
-.advantages_display {
+.advantages-display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,19 +593,19 @@ header {
           justify-content: space-between;
 }
 
-.advantage_img_delivery {
+.advantage__img-delivery {
   margin-bottom: 28px;
 }
 
-.advantage_img_sales {
+.advantage__img-sales {
   margin-bottom: 20px;
 }
 
-.advantage_img_guarantee {
+.advantage__img-guarantee {
   margin-bottom: 25px;
 }
 
-.advantage_heading {
+.advantage__heading {
   font-weight: normal;
   font-size: 19.96px;
   line-height: 24px;
@@ -458,7 +613,7 @@ header {
   margin-bottom: 16px;
 }
 
-.advantage_text {
+.advantage__text {
   font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
@@ -472,7 +627,7 @@ header {
   background-size: cover;
 }
 
-.feedback_display {
+.feedback-display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,18 +641,18 @@ header {
   height: 448px;
 }
 
-.feedback_info_img {
+.feedback-info__img {
   margin-bottom: 30px;
 }
 
-.feedback_info_text {
+.feedback-info__text {
   font-size: 20px;
   line-height: 24px;
   color: #222224;
   max-width: 359px;
 }
 
-.feedback_subscribe {
+.feedback-subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,61 +665,61 @@ header {
           align-items: center;
 }
 
-.feedback_subscribe_heading {
+.feedback-subscribe__heading {
   font-weight: normal;
   font-size: 18px;
-  line-height: 167.2%;
-  color: #222224;
+  line-height: 22px;
   margin-bottom: 32px;
 }
 
-.feedback_subscribe_heading_span {
+.feedback-subscribe__heading-span {
   font-weight: bold;
   font-size: 24px;
+  line-height: 29px;
 }
 
-.feedback_subscribe_form {
+.feedback-subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.feedback_subscribe_form_input {
+.feedback-subscribe-form__input {
   background: #e1e1e1;
   border: none;
   padding: 17px 0 17px 24px;
   border-radius: 20px 0 0 20px;
 }
 
-.feedback_subscribe_form_input::-webkit-input-placeholder {
+.feedback-subscribe-form__input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
 }
 
-.feedback_subscribe_form_input:-ms-input-placeholder {
+.feedback-subscribe-form__input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
 }
 
-.feedback_subscribe_form_input::-ms-input-placeholder {
+.feedback-subscribe-form__input::-ms-input-placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
 }
 
-.feedback_subscribe_form_input::placeholder {
+.feedback-subscribe-form__input::placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
 }
 
-.feedback_subscribe_form_button {
+.feedback-subscribe-form__button {
   border: none;
   background: #f16d7f;
   font-size: 14px;
@@ -579,7 +734,7 @@ header {
   cursor: pointer;
 }
 
-.feedback_subscribe_form_button:hover {
+.feedback-subscribe-form__button:hover {
   background: #e05c6e;
 }
 
