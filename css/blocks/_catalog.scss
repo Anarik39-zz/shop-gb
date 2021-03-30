@@ -24,13 +24,10 @@
     padding-left: 30px;
     display: flex;
     &__label {
-      cursor: pointer;
-      font-size: 14px;
-      line-height: 17px;
-      color: #6f6e6e;
+      @include sorting-label;
       padding-right: 28px;
       &::after {
-        content: url(../img/sort-icon.svg);
+        content: $sorting-icon;
         padding-left: 10px;
       }
     }

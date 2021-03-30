@@ -1,0 +1,10 @@
+@mixin pink-button {
+  color: #f26376;
+  border: 1px solid #ff6a6a;
+}
+@mixin sorting-label {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}

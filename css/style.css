@@ -312,10 +312,10 @@ header {
 }
 
 .products__button-link {
-  font-size: 16px;
-  line-height: 19px;
   color: #f26376;
   border: 1px solid #ff6a6a;
+  font-size: 16px;
+  line-height: 19px;
   padding: 15px 39px;
   background: white;
   outline: none;
@@ -531,12 +531,12 @@ header {
 }
 
 .description__button {
-  margin-top: 48px;
+  color: #f26376;
   border: 1px solid #ff6a6a;
+  margin-top: 48px;
   outline: none;
   font-size: 16px;
   line-height: 19px;
-  color: #f26376;
   background: #ffffff;
   padding-right: 57px;
   display: -webkit-box;
@@ -549,7 +549,7 @@ header {
 }
 
 .description__button::before {
-  content: url(../img/product-busket.svg);
+  content: url(../img/card-busket.svg);
   padding-right: 23px;
   padding: 15px 23px 7px 24px;
 }
