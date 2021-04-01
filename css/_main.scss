@@ -101,7 +101,7 @@ body {
     align-items: center;
     cursor: pointer;
     &::before {
-      content: $button__add-to-card;
+      content: url(../img/card-busket.svg);
       padding-right: 11px;
     }
   }

@@ -531,7 +531,6 @@ body {
   font-size: 16px;
   line-height: 19px;
   background: #ffffff;
-  padding-right: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,12 +538,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  fill: #ef5b70;
+  padding: 15px 57px 9px 24px;
 }
 
-.description__button::before {
-  content: url(../img/card-busket.svg);
+.description__button:hover {
+  background: #f16d7f;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.description__button-svg {
   padding-right: 23px;
-  padding: 15px 23px 7px 24px;
 }
 
 .sorting-product {
@@ -570,6 +575,10 @@ body {
 .sorting-product__label::after {
   content: url(../img/sort-icon.svg);
   padding-left: 9px;
+}
+
+.main-cart {
+  padding-bottom: 128px;
 }
 
 .advantages {
