@@ -1,11 +1,10 @@
 .advantages {
   background-color: #222224;
-  padding: 104px 0;
   text-align: center;
-  &-display {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 104px;
+  padding-top: 104px;
 }
 .advantage {
   &__img-delivery {

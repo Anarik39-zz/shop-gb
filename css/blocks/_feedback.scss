@@ -3,13 +3,11 @@
   background-image: url(../img/feedback-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  &-display {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    height: 448px;
-  }
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 448px;
 }
 
 .feedback-info {

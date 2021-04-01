@@ -20,19 +20,16 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
-/* .container {
+.container {
   padding: 0 calc(50% - 1140px / 2);
-} */
+}
 
 .breadcrumbs {
   height: 148px;
   background: #f8f3f4;
-  &-display {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &__heading {
     font-weight: normal;
     font-size: 24px;
