@@ -1,3 +1,7 @@
+.main-index {
+  padding-bottom: 109px;
+}
+
 .promo {
   background-color: #f1e4e6;
   margin-bottom: 65px;
@@ -10,7 +14,7 @@
     justify-content: flex-end;
     background-position: bottom left;
   }
-  &__heading {
+  &-heading {
     border-left: 12px solid $pink;
     padding-left: 16px;
     font-weight: bold;
@@ -30,10 +34,6 @@
   }
 }
 
-.main-index {
-  padding-bottom: 109px;
-}
-
 .offers {
   padding-bottom: 96px;
   &-parent {
@@ -44,11 +44,11 @@
 }
 .offer {
   position: relative;
-  &__img {
+  &-img {
     width: 100%;
     vertical-align: middle;
   }
-  &__text {
+  &-text {
     text-align: center;
     position: absolute;
     font-size: 16px;
@@ -69,7 +69,7 @@
 }
 
 .products {
-  &__heading {
+  &-heading {
     font-weight: normal;
     text-align: center;
     font-size: 30px;
@@ -77,14 +77,14 @@
     color: #222222;
     margin-bottom: 6px;
   }
-  &__text {
+  &-text {
     margin-bottom: 48px;
     text-align: center;
     font-size: 14px;
     line-height: 17px;
     color: #9f9f9f;
   }
-  &__button {
+  &-button {
     margin-top: 63px;
     text-align: center;
     &-link {

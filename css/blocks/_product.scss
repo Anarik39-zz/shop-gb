@@ -9,7 +9,7 @@
   padding: 11px 0 42px;
   border: 1px solid #eaeaea;
 }
-.slider__button {
+.slider-button {
   width: 47px;
   height: 47px;
   background: rgba(42, 42, 42, 0.15);
@@ -36,26 +36,26 @@
   text-align: center;
   padding: 65px 0;
   background: #ffffff;
-  &__heading-pink {
+  &-heading-pink {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: $pink;
   }
-  &__hr-pink {
+  &-hr-pink {
     background: #ef5b70;
     width: 63px;
     height: 3px;
     margin: 12px 0;
     border: none;
   }
-  &__heading {
+  &-heading {
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
     color: #4d4d4d;
   }
-  &__text {
+  &-text {
     max-width: 554px;
     font-weight: 300;
     font-size: 14px;
@@ -63,20 +63,20 @@
     color: #5e5e5e;
     padding: 48px 0 32px;
   }
-  &__price {
+  &-price {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
     color: #ef5b70;
   }
-  &__hr {
+  &-hr {
     width: 642px;
     height: 1px;
     border: none;
     background: #eaeaea;
     margin: 65px 0;
   }
-  &__button {
+  &-button {
     @include pink-button;
     margin-top: 48px;
     outline: none;
@@ -98,6 +98,9 @@
     }
   }
 }
-.sorting-product {
-  @include sorting(0, 23px, 9px);
+.sorting {
+  @include sorting;
+  &-label-product {
+    @include sorting-label(23px, 9px);
+  }
 }

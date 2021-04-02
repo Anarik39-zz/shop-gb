@@ -2,8 +2,7 @@
   color: #f26376;
   border: 1px solid #ff6a6a;
 }
-@mixin sorting($pl, $pr, $pl-icon) {
-  padding-left: $pl;
+@mixin sorting {
   display: flex;
   &-input {
     appearance: none;
@@ -13,10 +12,13 @@
     font-size: 14px;
     line-height: 17px;
     color: #6f6e6e;
-    padding-right: $pr;
-    &::after {
-      content: url(../img/sort-icon.svg);
-      padding-left: $pl-icon;
-    }
+  }
+}
+
+@mixin sorting-label($pr, $pl-icon) {
+  margin-right: $pr;
+  &::after {
+    content: url(../img/sort-icon.svg);
+    margin-left: $pl-icon;
   }
 }

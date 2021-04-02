@@ -30,13 +30,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &__heading {
+  &-heading {
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
     color: $pink;
   }
-  &__link {
+  &-link {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -68,7 +68,7 @@ body {
   &-margin {
     margin-bottom: 0;
   }
-  &__img-box {
+  &-img-box {
     position: relative;
   }
   &-background {
@@ -81,11 +81,11 @@ body {
   &:hover &-background {
     visibility: visible;
   }
-  &__img {
+  &-img {
     width: 100%;
     vertical-align: middle;
   }
-  &__button {
+  &-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -105,25 +105,50 @@ body {
       padding-right: 11px;
     }
   }
+
   &-info {
     padding: 25px 26px 20px 16px;
-    &__heading {
+    &-heading {
       font-weight: normal;
       font-size: 13px;
       line-height: 16px;
       color: #000000;
     }
-    &__text {
+    &-text {
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
       color: #5d5d5d;
       margin: 13px 0 18px;
     }
-    &__price {
+    &-price {
       font-size: 16px;
       line-height: 19px;
       color: $pink;
+    }
+  }
+}
+
+.pagination {
+  width: 284px;
+  margin: 48px auto 0;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 16px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+  }
+  &-li {
+    flex-grow: 1;
+    &-link {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #c4c4c4;
+      &-first {
+        color: #ef5b70;
+      }
     }
   }
 }
