@@ -98,18 +98,6 @@
     }
   }
 }
-
 .sorting-product {
-  display: flex;
-  &__input {
-    appearance: none;
-  }
-  &__label {
-    @include sorting-label;
-    padding-right: 23px;
-    &::after {
-      content: $sorting-icon;
-      padding-left: 9px;
-    }
-  }
+  @include sorting(0, 23px, 9px);
 }

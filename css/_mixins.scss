@@ -2,9 +2,21 @@
   color: #f26376;
   border: 1px solid #ff6a6a;
 }
-@mixin sorting-label {
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6f6e6e;
+@mixin sorting($pl, $pr, $pl-icon) {
+  padding-left: $pl;
+  display: flex;
+  &-input {
+    appearance: none;
+  }
+  &-label {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    padding-right: $pr;
+    &::after {
+      content: url(../img/sort-icon.svg);
+      padding-left: $pl-icon;
+    }
+  }
 }

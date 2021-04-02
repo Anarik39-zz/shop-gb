@@ -20,20 +20,7 @@
       padding-left: 11px;
     }
   }
-  &-sorting {
-    padding-left: 30px;
-    display: flex;
-    &__label {
-      @include sorting-label;
-      padding-right: 28px;
-      &::after {
-        content: $sorting-icon;
-        padding-left: 10px;
-      }
-    }
-  }
-  &-filter__input,
-  &-sorting__input {
+  &-filter__input {
     appearance: none;
   }
   &-filter__input:checked + &-filter__label,
@@ -41,6 +28,9 @@
     color: #ef5b70;
     fill: #ef5b70;
   }
+}
+.sorting-catalog {
+  @include sorting(30px, 28px, 10px);
 }
 
 .pagination {
