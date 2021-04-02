@@ -222,7 +222,7 @@ body {
   margin-right: 41px;
 }
 
-.header-burger-img,
+.header-label-img,
 .header-profil-img {
   margin-right: 33px;
 }
@@ -299,7 +299,7 @@ body {
 }
 
 .menu-display {
-  display: none !important;
+  display: none;
 }
 
 .main-index {
