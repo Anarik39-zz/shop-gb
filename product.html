@@ -14,23 +14,52 @@
 
 <body>
    <header class="header container">
-
       <nav class="header-left">
-         <a href="index.html" class="header-left__logo-link"><img class="header-left__logo-img" src="img/logo.png"
-               alt="logo"></a>
-         <a href="#" class="header-left__search-link"><img class="header-left__search-img" src="img/search.svg"
-               alt="search"></a>
+         <a href="index.html" class="header-logo-link"><img class="header-logo-img" src="img/logo.png" alt="logo"></a>
+         <a href="#" class="header-search-link"><img class="header-search-img" src="img/search.svg" alt="search"></a>
       </nav>
-
       <nav class="header-right">
-         <a href="#" class="header-right__burger-link"><img class="header-right__burger-img" src="img/burger.svg"
-               alt="button"></a>
-         <a href="#" class="header-right__profil-link"><img class="header-right__profil-img" src="img/profile.svg"
-               alt="profile"></a>
-         <a href="#" class="header-right__busket-link"><img class="header-right__busket-img" src="img/busket.svg"
-               alt="busket"></a>
-      </nav>
+         <input class="header-input" type="checkbox" id="menu-id">
+         <label class="header-label" for="menu-id"><img class="header-burger-img" src="img/burger.svg"
+               alt="button"></label>
+         <div class="menu">
+            <ul class="menu-list">
+               <li class="menu-li-menu">MENU</li>
+               <li class="menu-li-category"><a href="#" class="menu-link-category">MAN</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Accessories</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Bags</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Denim</a></li>
+               <li class="menu-li-last"><a href="#" class="menu-link">T-Shirts</a></li>
+               <li class="menu-li-category"><a href="#" class="menu-link-category">WOMAN</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Accessories</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Jackets & Coats</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Polos</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">T-Shirts</a></li>
+               <li class="menu-li-last"><a href="#" class="menu-link">Shirts</a></li>
+               <li class="menu-li-category"><a href="#" class="menu-link-category">KIDS</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Accessories</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Jackets & Coats</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Polos</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">T-Shirts</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Shirts</a></li>
+               <li class="menu-li"><a href="#" class="menu-link">Bags</a></li>
+            </ul>
+            <button class="menu-close-btn"><img src="img/menu-icon.svg" alt="X"></button>
 
+            <script>
+               document.querySelector(".menu-close-btn").onclick = function () {
+                  document.querySelector(".menu").classList.add("menu-display");
+                  document.getElementById("menu-id").checked = false;
+               }
+               document.querySelector(".header-input").onclick = function () {
+                  document.querySelector(".menu").classList.remove("menu-display");
+               }
+            </script>
+
+         </div>
+         <a href="#" class="header-profil-link"><img class="header-profil-img" src="img/profile.svg" alt="profile"></a>
+         <a href="#" class="header-busket-link"><img class="header-busket-img" src="img/busket.svg" alt="busket"></a>
+      </nav>
    </header>
    <main class="main-product">
       <section class="breadcrumbs container">
