@@ -22,3 +22,18 @@
     margin-left: $pl-icon;
   }
 }
+@mixin item-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+@mixin item-button {
+  font-family: Lato;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #a4a4a4;
+  padding: 16px 40px;
+}

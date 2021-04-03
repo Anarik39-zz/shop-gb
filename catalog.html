@@ -20,10 +20,10 @@
       </nav>
       <nav class="header-right">
          <input class="header-input" type="checkbox" id="menu-id">
-         <label class="header-label" for="menu-id"><img class="header-burger-img" src="img/burger.svg"
+         <label class="header-label" for="menu-id"><img class="header-label-img" src="img/burger.svg"
                alt="button"></label>
          <div class="menu">
-            <ul class="menu">
+            <ul class="menu-list">
                <li class="menu-li-first">MENU</li>
                <li class="menu-li-category"><a href="#" class="menu-link-category">MAN</a></li>
                <li class="menu-li"><a href="#" class="menu-link">Accessories</a></li>
@@ -45,17 +45,6 @@
                <li class="menu-li"><a href="#" class="menu-link">Bags</a></li>
             </ul>
             <button class="menu-close-btn"><img src="img/menu-icon.svg" alt="X"></button>
-
-            <script>
-               document.querySelector(".menu-close-btn").onclick = function () {
-                  document.querySelector(".menu").classList.add("menu-display");
-                  document.getElementById("menu-id").checked = false;
-               }
-               document.querySelector(".header-input").onclick = function () {
-                  document.querySelector(".menu").classList.remove("menu-display");
-               }
-            </script>
-
          </div>
          <a href="#" class="header-profil-link"><img class="header-profil-img" src="img/profile.svg" alt="profile"></a>
          <a href="cart.html" class="header-busket-link"><img class="header-busket-img" src="img/busket.svg"
@@ -340,6 +329,15 @@
          </li>
       </ul>
    </footer>
+   <script>
+      document.querySelector(".menu-close-btn").onclick = function () {
+         document.querySelector(".menu").classList.add("menu-display");
+         document.getElementById("menu-id").checked = false;
+      }
+      document.querySelector(".header-input").onclick = function () {
+         document.querySelector(".menu").classList.remove("menu-display");
+      }
+   </script>
 </body>
 
 </html>
