@@ -24,6 +24,11 @@ body {
           flex-direction: column;
 }
 
+button,
+input {
+  font-family: Lato;
+}
+
 .center {
   max-width: 1140px;
   margin: 0 auto;
@@ -791,12 +796,12 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
-  padding: 17px 0 20px;
+  padding-top: 17px;
 }
 
 .form-address__input {
+  margin-top: 20px;
   height: 45px;
-  margin-bottom: 20px;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
@@ -834,7 +839,7 @@ body {
 }
 
 .form-address__button {
-  font-family: Lato;
+  margin-top: 24px;
   color: #4a4a4a;
   border: 1px solid #a4a4a4;
   background: none;
@@ -901,7 +906,6 @@ body {
 }
 
 .form-totalprice__btn {
-  font-family: Lato;
   cursor: pointer;
   font-weight: 300;
   font-size: 16px;
@@ -919,6 +923,162 @@ body {
 .form-totalprice__btn:hover {
   color: #f26376;
   background: #ffffff;
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+}
+
+.registration-form__heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration-form__input {
+  margin-top: 20px;
+  height: 45px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  padding-left: 17px;
+  outline: none;
+}
+
+.registration-form__input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration-form__input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration-form__input::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration-form__input::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration-gender {
+  padding: 31px 0 33px;
+}
+
+.registration-gender__input {
+  border: 1px solid #a4a4a4;
+  outline: none;
+}
+
+.registration-gender__input {
+  margin-right: 10px;
+}
+
+.registration-gender__label {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.registration-form__text {
+  padding: 15px 0 39px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration-form__btn {
+  padding: 16px 0;
+  width: 167px;
+  outline: none;
+  border: 1px solid #ff6a6a;
+  background: #f16d7f;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.registration-form__btn-img {
+  padding-left: 20px;
+  fill: white;
+}
+
+.registration-form__btn:hover {
+  color: #f16d7f;
+  background: #ffffff;
+}
+
+.registration-form__btn:hover .registration-form__btn-img {
+  fill: #f16d7f;
+}
+
+.registration-loyalty {
+  width: 652px;
+}
+
+.loyalty__heading {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 22px;
+}
+
+.loyalty__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 21px;
+}
+
+.loyalty__li {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 16px;
+}
+
+.loyalty__li::before {
+  content: url(../../img/loyalty-icon.svg);
+  padding-right: 22px;
 }
 
 .advantages {

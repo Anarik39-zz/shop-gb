@@ -9,12 +9,15 @@ li {
 a {
   text-decoration: none;
 }
-
 body {
   min-height: 100vh;
   font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
+}
+button,
+input {
+  font-family: Lato;
 }
 .center {
   max-width: 1140px;

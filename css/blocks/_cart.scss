@@ -76,30 +76,14 @@
   display: flex;
   flex-direction: column;
   &__heading {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #222222;
-    padding: 17px 0 20px;
+    @include form-heading;
+    padding-top: 17px;
   }
   &__input {
-    height: 45px;
-    margin-bottom: 20px;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    color: #222222;
-    padding-left: 17px;
-    outline: none;
-    &::placeholder {
-      font-weight: 300;
-      font-size: 13px;
-      line-height: 16px;
-      color: #b1b1b1;
-    }
+    @include form-input;
   }
   &__button {
-    font-family: Lato;
+    margin-top: 24px;
     color: #4a4a4a;
     border: 1px solid #a4a4a4;
     background: none;
@@ -154,7 +138,6 @@
   background: #e2e2e2;
 }
 .form-totalprice__btn {
-  font-family: Lato;
   cursor: pointer;
   font-weight: 300;
   font-size: 16px;
