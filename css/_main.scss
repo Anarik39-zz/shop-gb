@@ -28,6 +28,8 @@ input {
 }
 
 .breadcrumbs {
+  position: relative;
+  z-index: 1;
   height: 148px;
   background: #f8f3f4;
   display: flex;

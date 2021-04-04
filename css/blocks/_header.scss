@@ -9,7 +9,6 @@
 .header-logo-img {
   margin-right: 41px;
 }
-.header-label-img,
 .header-profil-img {
   margin-right: 33px;
 }
@@ -20,9 +19,17 @@
   cursor: pointer;
 }
 
+.header-label-img {
+  margin-right: 33px;
+  transition: 2s;
+}
+.header-input:checked ~ .header-label .header-label-img {
+  transform: rotate(180deg);
+}
 .menu {
   display: none;
   position: absolute;
+  z-index: 2;
   right: 0;
   top: 75px;
   height: 764px;

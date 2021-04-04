@@ -39,6 +39,8 @@ input {
 }
 
 .breadcrumbs {
+  position: relative;
+  z-index: 1;
   height: 148px;
   background: #f8f3f4;
   display: -webkit-box;
@@ -227,7 +229,6 @@ input {
   margin-right: 41px;
 }
 
-.header-label-img,
 .header-profil-img {
   margin-right: 33px;
 }
@@ -242,9 +243,21 @@ input {
   cursor: pointer;
 }
 
+.header-label-img {
+  margin-right: 33px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.header-input:checked ~ .header-label .header-label-img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .menu {
   display: none;
   position: absolute;
+  z-index: 2;
   right: 0;
   top: 75px;
   height: 764px;
@@ -420,6 +433,8 @@ input {
 .products-button {
   margin-top: 63px;
   text-align: center;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .products-button-link {
@@ -431,11 +446,18 @@ input {
   background: white;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .products-button-link:hover {
   color: white;
   background: #f16d7f;
+}
+
+.products-button:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 .main-catalog {
@@ -603,6 +625,16 @@ input {
           transform: rotate(180deg);
 }
 
+.slider-img {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.slider-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .description {
   max-width: 1141px;
   margin: 0 auto 129px;
@@ -687,6 +719,8 @@ input {
   cursor: pointer;
   fill: #ef5b70;
   padding: 15px 57px 9px 24px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .description-button:hover {
@@ -697,6 +731,11 @@ input {
 
 .description-button-svg {
   padding-right: 23px;
+}
+
+.description-button:hover {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
 }
 
 .sorting {
@@ -810,6 +849,8 @@ input {
 }
 
 .item-button {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   font-family: Lato;
   cursor: pointer;
   font-weight: 300;
@@ -827,6 +868,8 @@ input {
 }
 
 .item-link {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   font-family: Lato;
   cursor: pointer;
   font-weight: 300;
@@ -899,6 +942,8 @@ input {
 }
 
 .form-address__button {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   margin-top: 24px;
   color: #4a4a4a;
   border: 1px solid #a4a4a4;
@@ -966,6 +1011,8 @@ input {
 }
 
 .form-totalprice__btn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   cursor: pointer;
   font-weight: 300;
   font-size: 16px;
@@ -1083,6 +1130,8 @@ input {
 }
 
 .registration-form__btn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   padding: 16px 0;
   width: 167px;
   outline: none;
@@ -1291,6 +1340,8 @@ input {
   padding: 17px;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .feedback-subscribe-form-button:hover {
@@ -1329,6 +1380,8 @@ input {
   height: 32px;
   margin-right: 7px;
   background-color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .social-link {

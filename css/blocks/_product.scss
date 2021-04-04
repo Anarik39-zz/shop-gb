@@ -23,6 +23,12 @@
     transform: rotate(180deg);
   }
 }
+.slider-img {
+  transition: 2s;
+}
+.slider-img:hover {
+  transform: scale(1.1);
+}
 
 .description {
   max-width: 1141px;
@@ -88,6 +94,7 @@
     cursor: pointer;
     fill: #ef5b70;
     padding: 15px 57px 9px 24px;
+    transition: 1s;
     &:hover {
       background: #f16d7f;
       color: #ffffff;
@@ -95,6 +102,9 @@
     }
     &-svg {
       padding-right: 23px;
+    }
+    &:hover {
+      transform: rotateX(360deg);
     }
   }
 }
