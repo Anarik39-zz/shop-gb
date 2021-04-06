@@ -44,7 +44,7 @@
                <li class="menu-li"><a href="#" class="menu-link">Shirts</a></li>
                <li class="menu-li"><a href="#" class="menu-link">Bags</a></li>
             </ul>
-            <button class="menu-close-btn"><img src="img/menu-icon.svg" alt="X"></button>
+            <label for="menu-id" class="menu-close-btn"><img src="img/menu-icon.svg" alt="X"></label>
          </div>
          <a href="registration.html" class="header-profil-link"><img class="header-profil-img" src="img/profile.svg"
                alt="profile"></a>
@@ -150,15 +150,6 @@
          </li>
       </ul>
    </footer>
-   <script>
-      document.querySelector(".menu-close-btn").onclick = function () {
-         document.querySelector(".menu").classList.add("menu-display");
-         document.getElementById("menu-id").checked = false;
-      }
-      document.querySelector(".header-input").onclick = function () {
-         document.querySelector(".menu").classList.remove("menu-display");
-      }
-   </script>
 </body>
 
 </html>
