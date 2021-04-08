@@ -8,6 +8,7 @@
   text-align: center;
   justify-content: space-between;
   height: 448px;
+  box-sizing: border-box;
 }
 
 .feedback-info {
@@ -23,9 +24,6 @@
 }
 
 .feedback-subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   &-heading {
     font-weight: normal;
     font-size: 18px;
@@ -41,6 +39,8 @@
   &-form {
     display: flex;
     &-input {
+      width: 256px;
+      box-sizing: border-box;
       background: #e1e1e1;
       border: none;
       padding: 17px 0 17px 24px;
@@ -69,6 +69,47 @@
       transition: 0.6s;
       &:hover {
         background: #e05c6e;
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .feedback {
+    flex-direction: column;
+    height: 693px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+  .feedback-subscribe {
+    &-heading {
+      line-height: 162%;
+      &-span {
+        line-height: 162%;
+      }
+    }
+  }
+}
+
+@media (max-width: 797px) {
+  .feedback {
+    height: 550px;
+    padding-bottom: 115px;
+  }
+
+  .feedback-info {
+    &-text {
+      padding-bottom: 59px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .feedback-subscribe {
+    &-heading {
+      line-height: 153.2%;
+      &-span {
+        line-height: 153.2%;
       }
     }
   }

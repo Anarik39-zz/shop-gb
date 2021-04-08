@@ -7,6 +7,7 @@
   padding-top: 104px;
 }
 .advantage {
+  max-width: 360px;
   &-img-delivery {
     margin-bottom: 28px;
   }
@@ -28,5 +29,37 @@
     font-size: 13.972px;
     line-height: 17px;
     color: #fbfbfb;
+  }
+}
+
+@media (max-width: 1180px) {
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 64px;
+    padding-top: 48px;
+  }
+  .advantage {
+    &-img-sales {
+      margin-top: 48px;
+    }
+    &-img-guarantee {
+      margin-top: 48px;
+    }
+  }
+}
+
+@media (max-width: 797px) {
+  .advantages {
+    padding-bottom: 81px;
+  }
+  .advantage {
+    max-width: 302px;
+    &-img-sales {
+      margin-top: 48px;
+    }
+    &-img-guarantee {
+      margin-top: 48px;
+    }
   }
 }

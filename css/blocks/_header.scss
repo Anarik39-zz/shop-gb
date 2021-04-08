@@ -79,6 +79,18 @@
 .header-input:checked ~ .menu {
   display: block;
 }
-.menu-display {
-  display: none;
+
+@media (max-width: 797px) {
+  .header-label-img {
+    margin-right: 0px;
+  }
+  .header-profil-img {
+    display: none;
+  }
+  .header-busket-img {
+    display: none;
+  }
+  .menu {
+    width: 100%;
+  }
 }

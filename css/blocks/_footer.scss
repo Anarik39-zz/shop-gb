@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   height: 79px;
+  box-sizing: border-box;
 }
 .footer-copyright {
   font-size: 16px;
@@ -35,5 +36,18 @@
   }
   &:hover &-img {
     fill: white;
+  }
+}
+@media (max-width: 797px) {
+  .footer {
+    flex-direction: column;
+    height: 143px;
+    padding-top: 43px;
+    padding-bottom: 9px;
+  }
+  .footer-copyright {
+    order: 1;
+  }
+  .footer-socials {
   }
 }

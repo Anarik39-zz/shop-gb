@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-position: bottom left;
+    background-position: -226px bottom;
   }
   &-heading {
     border-left: 12px solid $pink;
@@ -36,36 +36,44 @@
 
 .offers {
   padding-bottom: 96px;
+  display: flex;
+  flex-direction: column;
   &-parent {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
   }
 }
+
 .offer {
-  position: relative;
-  &-img {
-    width: 100%;
-    vertical-align: middle;
+  width: 100%;
+  background-size: cover;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-align: center;
+  padding: 105px 0;
+  &-span {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink;
   }
-  &-text {
-    font-weight: normal;
-    text-align: center;
-    position: absolute;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ffffff;
-    &-span {
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 29px;
-      color: $pink;
-    }
-    &-position {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+  &-women {
+    background-image: url(../../img/section-for-women.jpg);
+    margin-right: 30px;
+  }
+  &-men {
+    background-image: url(../../img/section-for-men.jpg);
+    margin-right: 30px;
+  }
+  &-kids {
+    background-image: url(../../img/section-for-kids.jpg);
+  }
+  &-accesories {
+    background-image: url(../../img/section-for-accessories.jpg);
+    padding: 65px 0;
   }
 }
 
@@ -105,6 +113,123 @@
     }
     &:hover {
       transform: rotateY(360deg);
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .main-index {
+    padding-bottom: 78px;
+  }
+  .promo {
+    margin-bottom: 20px;
+    &-background {
+      background-size: 386px;
+      background-position: -16px bottom;
+      height: 367px;
+    }
+    &-heading {
+      font-size: 24px;
+      line-height: 29px;
+      margin-right: 15px;
+      margin-bottom: 0;
+      &-the-brand {
+        font-size: 44px;
+        line-height: 53px;
+      }
+      &-fashion {
+        color: $pink;
+      }
+    }
+  }
+
+  .offers {
+    padding-bottom: 155px;
+    &-parent {
+      margin-bottom: 20px;
+    }
+  }
+
+  .offer {
+    padding: 59px 0;
+    &-women {
+      margin-right: 20px;
+    }
+    &-men {
+      margin-right: 20px;
+    }
+    &-accesories {
+      padding: 33px 0;
+    }
+  }
+
+  .products {
+    &-heading {
+      margin-bottom: 3px;
+    }
+    &-text {
+      margin-bottom: 73px;
+    }
+    &-button {
+      margin-top: 47px;
+    }
+  }
+}
+
+@media (max-width: 797px) {
+  .main-index {
+    padding-bottom: 110px;
+  }
+
+  .promo {
+    margin-bottom: 64px;
+    &-background {
+      height: 363px;
+      background-image: none;
+      align-items: center;
+      justify-content: center;
+    }
+    &-heading {
+      font-size: 20px;
+      line-height: 24px;
+      margin-right: 0;
+      margin-bottom: 0;
+      &-the-brand {
+        font-size: 38px;
+        line-height: 46px;
+      }
+    }
+  }
+
+  .offers {
+    padding-bottom: 64px;
+    &-parent {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+
+  .offer {
+    padding: 98px 0;
+    margin-bottom: 32px;
+    &-women {
+      margin-right: 0;
+    }
+    &-men {
+      margin-right: 0;
+    }
+    &-accesories {
+      padding: 33px 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .products {
+    &-text {
+      margin-bottom: 65px;
+    }
+    &-button {
+      margin-top: 55px;
     }
   }
 }
