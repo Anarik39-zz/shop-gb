@@ -5,6 +5,7 @@
 .customization {
   margin: 51px 0 64px;
   display: flex;
+  align-items: center;
 }
 
 .filters {
@@ -15,7 +16,8 @@
     position: relative;
     z-index: 2;
     appearance: none;
-    &:checked ~ .filters-label {
+    &:checked ~ .filters-label,
+    &:checked ~ .filters-label-icon {
       color: #ef5b70;
       fill: #ef5b70;
     }
@@ -30,9 +32,16 @@
     color: #000000;
     cursor: pointer;
   }
-  &-icon {
+  &-label-icon {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
     padding-left: 11px;
   }
+}
+.filters-icon {
+  width: 15px;
+  height: 10px;
 }
 
 .filters-open {
@@ -104,6 +113,9 @@
       margin-left: 10px;
     }
   }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .sort-input:checked ~ .sort-open {
@@ -133,5 +145,74 @@
   }
   &__input {
     margin-right: 9px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .main-catalog {
+    padding-bottom: 63px;
+  }
+
+  .customization {
+    margin: 24px 0 40px;
+    justify-content: space-between;
+  }
+
+  .filters {
+    margin-right: 0;
+    &-label {
+      padding-left: 0;
+    }
+  }
+
+  .sort-open {
+    box-sizing: border-box;
+    &__input {
+      margin-right: 5px;
+    }
+  }
+  .card-display {
+    display: none;
+  }
+}
+
+@media (max-width: 797px) {
+  .customization {
+    margin: 12px 0 32px;
+  }
+
+  .filters {
+    width: 0;
+  }
+  .filters-label {
+    display: none;
+  }
+  .filters-icon {
+    height: 25px;
+    width: 37.5px;
+  }
+  .filters-open {
+    top: 10px;
+  }
+
+  .sort {
+    margin-right: 24px;
+    &-label {
+      font-size: 12px;
+      line-height: 14px;
+      &::after {
+        margin-left: 9px;
+      }
+    }
+  }
+
+  .sort-open {
+    &__label {
+      font-size: 11px;
+      line-height: 12px;
+    }
+    &__input {
+      margin-right: 3px;
+    }
   }
 }

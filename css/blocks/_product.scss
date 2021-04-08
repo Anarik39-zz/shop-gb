@@ -2,14 +2,16 @@
   padding-bottom: 128px;
 }
 .slider {
+  position: relative;
   background: #f7f7f7;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 11px 0 42px;
   border: 1px solid #eaeaea;
 }
 .slider-button {
+  position: absolute;
   width: 47px;
   height: 47px;
   background: rgba(42, 42, 42, 0.15);
@@ -19,8 +21,11 @@
   &:hover &-svg {
     fill: $pink;
   }
-  &-svg-right {
-    transform: rotate(180deg);
+  &__left {
+    left: 0;
+  }
+  &__right {
+    right: 0;
   }
 }
 .slider-img {
