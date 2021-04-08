@@ -2,26 +2,6 @@
   color: #f26376;
   border: 1px solid #ff6a6a;
 }
-@mixin sorting {
-  display: flex;
-  &-input {
-    appearance: none;
-  }
-  &-label {
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6f6e6e;
-  }
-}
-
-@mixin sorting-label($pr, $pl-icon) {
-  margin-right: $pr;
-  &::after {
-    content: url(../img/sort-icon.svg);
-    margin-left: $pl-icon;
-  }
-}
 @mixin item-text {
   font-size: 22px;
   line-height: 26px;

@@ -108,9 +108,3 @@
     }
   }
 }
-.sorting {
-  @include sorting;
-  &-label-product {
-    @include sorting-label(23px, 9px);
-  }
-}

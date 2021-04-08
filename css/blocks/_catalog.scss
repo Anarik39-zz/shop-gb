@@ -83,8 +83,55 @@
 }
 
 .sorting {
-  @include sorting;
-  &-label-catalog {
-    @include sorting-label(28px, 10px);
+  display: flex;
+}
+
+.sort {
+  margin-right: 28px;
+  position: relative;
+
+  &-input {
+    appearance: none;
+  }
+
+  &-label {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    &::after {
+      content: url(../img/sort-icon.svg);
+      margin-left: 10px;
+    }
+  }
+}
+
+.sort-input:checked ~ .sort-open {
+  visibility: visible;
+}
+
+.sort-open {
+  text-align: left;
+  visibility: hidden;
+  margin-top: 5px;
+  padding: 9px 9px 12px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  &__label {
+    font-size: 14px;
+    line-height: 16px;
+    color: #6f6e6e;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__input {
+    margin-right: 9px;
   }
 }

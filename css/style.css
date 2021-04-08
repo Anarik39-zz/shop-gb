@@ -737,26 +737,66 @@ input {
   display: flex;
 }
 
-.sorting-input {
+.sort {
+  margin-right: 28px;
+  position: relative;
+}
+
+.sort-input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-.sorting-label {
+.sort-label {
   cursor: pointer;
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
 }
 
-.sorting-label-catalog {
-  margin-right: 28px;
-}
-
-.sorting-label-catalog::after {
+.sort-label::after {
   content: url(../img/sort-icon.svg);
   margin-left: 10px;
+}
+
+.sort-input:checked ~ .sort-open {
+  visibility: visible;
+}
+
+.sort-open {
+  text-align: left;
+  visibility: hidden;
+  margin-top: 5px;
+  padding: 9px 9px 12px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ffffff;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.sort-open__label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #6f6e6e;
+  margin-bottom: 10px;
+}
+
+.sort-open__label:last-child {
+  margin-bottom: 0;
+}
+
+.sort-open__input {
+  margin-right: 9px;
 }
 
 .main-product {
@@ -907,34 +947,6 @@ input {
 .description-button:hover {
   -webkit-transform: rotateX(360deg);
           transform: rotateX(360deg);
-}
-
-.sorting {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.sorting-input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.sorting-label {
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6f6e6e;
-}
-
-.sorting-label-product {
-  margin-right: 23px;
-}
-
-.sorting-label-product::after {
-  content: url(../img/sort-icon.svg);
-  margin-left: 9px;
 }
 
 .cart {
