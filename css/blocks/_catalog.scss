@@ -162,7 +162,9 @@
       margin-left: 0;
     }
   }
-
+  .filters-input:checked ~ .filters-label {
+    margin-left: 16px;
+  }
   .sort-open {
     box-sizing: border-box;
     &__input {
@@ -185,6 +187,12 @@
   .filters-label {
     display: none;
   }
+  .filters-label-icon {
+    padding-left: 0;
+  }
+  .filters-input:checked ~ .filters-label-icon {
+    margin-left: 16px;
+  }
   .filters-icon {
     height: 25px;
     width: 37.5px;
@@ -206,9 +214,9 @@
   }
 
   .sort-open {
+    padding: 9px 5px 12px;
     &__label {
       font-size: 11px;
-      line-height: 12px;
     }
     &__input {
       margin-right: 3px;

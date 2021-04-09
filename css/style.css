@@ -841,6 +841,9 @@ input {
   .filters-label {
     margin-left: 0;
   }
+  .filters-input:checked ~ .filters-label {
+    margin-left: 16px;
+  }
   .sort-open {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -863,6 +866,12 @@ input {
   .filters-label {
     display: none;
   }
+  .filters-label-icon {
+    padding-left: 0;
+  }
+  .filters-input:checked ~ .filters-label-icon {
+    margin-left: 16px;
+  }
   .filters-icon {
     height: 25px;
     width: 37.5px;
@@ -881,9 +890,11 @@ input {
   .sort-label::after {
     margin-left: 9px;
   }
+  .sort-open {
+    padding: 9px 5px 12px;
+  }
   .sort-open__label {
     font-size: 11px;
-    line-height: 12px;
   }
   .sort-open__input {
     margin-right: 3px;
