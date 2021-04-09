@@ -13,9 +13,7 @@
   position: relative;
   margin-right: 30px;
   &-input {
-    position: relative;
-    z-index: 2;
-    appearance: none;
+    display: none;
     &:checked ~ .filters-label,
     &:checked ~ .filters-label-icon {
       color: #ef5b70;
@@ -25,7 +23,7 @@
   &-label {
     position: relative;
     z-index: 2;
-    padding-left: 16px;
+    margin-left: 16px;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -100,7 +98,7 @@
   position: relative;
 
   &-input {
-    appearance: none;
+    display: none;
   }
 
   &-label {
@@ -161,7 +159,7 @@
   .filters {
     margin-right: 0;
     &-label {
-      padding-left: 0;
+      margin-left: 0;
     }
   }
 
@@ -178,7 +176,7 @@
 
 @media (max-width: 797px) {
   .customization {
-    margin: 12px 0 32px;
+    margin: 24px 0 32px;
   }
 
   .filters {
@@ -192,7 +190,8 @@
     width: 37.5px;
   }
   .filters-open {
-    top: 10px;
+    top: -13px;
+    padding: 62px 0 16px;
   }
 
   .sort {
