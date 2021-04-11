@@ -68,7 +68,7 @@ summary {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
 }
 
@@ -303,7 +303,7 @@ summary {
     padding: 0 calc(50% - (768px - 16px * 2) / 2);
   }
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
   }
 
