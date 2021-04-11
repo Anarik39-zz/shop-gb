@@ -1108,10 +1108,6 @@ summary::-webkit-details-marker {
   width: 652px;
 }
 
-.cart-form {
-  width: 360px;
-}
-
 .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1123,7 +1119,9 @@ summary::-webkit-details-marker {
 }
 
 .item-info {
-  padding: 22px 0 0 31px;
+  width: 100%;
+  padding-top: 22px;
+  padding-left: 31px;
 }
 
 .item-heading {
@@ -1141,13 +1139,17 @@ summary::-webkit-details-marker {
   color: #575757;
 }
 
+.item-text:last-child {
+  padding-bottom: 0;
+}
+
 .item-text__span {
   color: #ef5b70;
 }
 
 .item-input {
   width: 44px;
-  text-align: right;
+  text-align: center;
   border: 1px solid #eaeaea;
   outline: none;
   font-size: 18px;
@@ -1167,6 +1169,7 @@ summary::-webkit-details-marker {
 }
 
 .item-buttons {
+  margin-top: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1211,7 +1214,12 @@ summary::-webkit-details-marker {
   border: 1px solid #ff6a6a;
 }
 
+.cart-form {
+  width: 360px;
+}
+
 .form-address {
+  width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1230,6 +1238,7 @@ summary::-webkit-details-marker {
 }
 
 .form-address__input {
+  border: 1px solid #a4a4a4;
   margin-top: 20px;
   height: 45px;
   font-weight: 300;
@@ -1291,6 +1300,10 @@ summary::-webkit-details-marker {
 }
 
 .form-totalprice {
+  height: 214px;
+  width: 360px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 57px;
   padding: 39px 44px 42px;
   background: #f5f3f3;
@@ -1359,6 +1372,90 @@ summary::-webkit-details-marker {
   background: #ffffff;
 }
 
+@media (max-width: 1180px) {
+  .cart {
+    padding-top: 59px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cart-items {
+    width: 100%;
+  }
+  .cart-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .item-buttons {
+    margin-top: 62px;
+    margin-bottom: 64px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 797px) {
+  .cart {
+    padding-top: 39px;
+    padding-bottom: 96px;
+  }
+  .cart-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .item {
+    margin-bottom: 32px;
+  }
+  .item-info {
+    padding-top: 13px;
+    padding-left: 17px;
+  }
+  .item-img {
+    height: 188px;
+  }
+  .item-heading {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 26px;
+  }
+  .item-text {
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .item-close-btn {
+    top: 17px;
+    right: 12px;
+  }
+  .item-buttons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+  }
+  .item-button {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    padding: 9px 20px;
+  }
+  .item-link {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    padding: 9px 20px;
+  }
+}
+
 .registration {
   padding-top: 64px;
   padding-bottom: 96px;
@@ -1371,6 +1468,7 @@ summary::-webkit-details-marker {
 }
 
 .registration-form {
+  width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1378,10 +1476,10 @@ summary::-webkit-details-marker {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 360px;
 }
 
 .registration-form__heading {
+  width: 360px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1515,6 +1613,41 @@ summary::-webkit-details-marker {
 .loyalty__li::before {
   content: url(../../img/loyalty-icon.svg);
   padding-right: 22px;
+}
+
+@media (max-width: 1180px) {
+  .registration {
+    padding-top: 40px;
+  }
+  .registration-loyalty {
+    width: 354px;
+  }
+  .loyalty__heading {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 32px;
+  }
+  .loyalty__text {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 22px;
+  }
+  .loyalty__li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 797px) {
+  .registration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration-form {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages {

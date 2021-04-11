@@ -59,21 +59,21 @@
          <h2 class="breadcrumbs-heading">REGISTRATION</h2>
       </section>
       <section class="registration container">
-         <div class="registration-form">
+         <form class="registration-form">
             <h4 class="registration-form__heading">Your Name</h4>
-            <input type="text" class="registration-form__input" placeholder="First Name">
-            <input type="text" class="registration-form__input" placeholder="Last Name">
+            <input type="text" class="registration-form__input" required placeholder="First Name">
+            <input type="text" class="registration-form__input" required placeholder="Last Name">
             <div class="registration-gender">
                <label class="registration-gender__label"><input class="registration-gender__input" name="gender-check"
-                     type="radio">Male</label>
+                     type="radio" required>Male</label>
                <label class="registration-gender__label"><input class="registration-gender__input" name="gender-check"
-                     type="radio">Female</label>
+                     type="radio" required>Female</label>
                <label class="registration-gender__label"><input class="registration-gender__input" name="gender-check"
-                     type="radio">Other</label>
+                     type="radio" required>Other</label>
             </div>
             <h4 class="registration-form__heading">Login details</h4>
-            <input type="email" class="registration-form__input" placeholder="Email">
-            <input type="password" class="registration-form__input" placeholder="Password">
+            <input type="email" class="registration-form__input" required placeholder="Email">
+            <input type="password" class="registration-form__input" required placeholder="Password">
             <p class="registration-form__text">Please use 8 or more characters, with at least 1 number and a mixture of
                uppercase and lowercase letters</p>
             <button class="registration-form__btn" type="submit">JOIN NOW<svg class="registration-form__btn-img"
@@ -84,7 +84,7 @@
                      d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" />
                </svg>
             </button>
-         </div>
+         </form>
          <div class="registration-loyalty">
             <h3 class="loyalty__heading">LOYALTY HAS ITS PERKS</h3>
             <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks.

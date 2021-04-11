@@ -7,9 +7,6 @@
 .cart-items {
   width: 652px;
 }
-.cart-form {
-  width: 360px;
-}
 .item {
   display: flex;
   position: relative;
@@ -17,7 +14,9 @@
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 .item-info {
-  padding: 22px 0 0 31px;
+  width: 100%;
+  padding-top: 22px;
+  padding-left: 31px;
 }
 .item-heading {
   font-weight: normal;
@@ -29,6 +28,9 @@
 .item-text {
   padding-bottom: 6px;
   @include item-text;
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 .item-text__span {
   color: #ef5b70;
@@ -36,7 +38,7 @@
 
 .item-input {
   width: 44px;
-  text-align: right;
+  text-align: center;
   border: 1px solid #eaeaea;
   outline: none;
   font-size: 18px;
@@ -55,6 +57,7 @@
 }
 
 .item-buttons {
+  margin-top: 72px;
   display: flex;
   justify-content: space-between;
 }
@@ -75,7 +78,11 @@
   }
 }
 
+.cart-form {
+  width: 360px;
+}
 .form-address {
+  width: 360px;
   display: flex;
   flex-direction: column;
   &__heading {
@@ -83,6 +90,7 @@
     padding-top: 17px;
   }
   &__input {
+    border: 1px solid #a4a4a4;
     @include form-input;
   }
   &__button {
@@ -106,6 +114,9 @@
 }
 
 .form-totalprice {
+  height: 214px;
+  width: 360px;
+  box-sizing: border-box;
   margin-top: 57px;
   padding: 39px 44px 42px;
   background: #f5f3f3;
@@ -158,5 +169,76 @@
   &:hover {
     color: #f26376;
     background: #ffffff;
+  }
+}
+
+@media (max-width: 1180px) {
+  .cart {
+    padding-top: 59px;
+    flex-direction: column;
+  }
+  .cart-items {
+    width: 100%;
+  }
+  .cart-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item-buttons {
+    margin-top: 62px;
+    margin-bottom: 64px;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 797px) {
+  .cart {
+    padding-top: 39px;
+    padding-bottom: 96px;
+  }
+  .cart-form {
+    flex-direction: column;
+  }
+  .item {
+    margin-bottom: 32px;
+  }
+  .item-info {
+    padding-top: 13px;
+    padding-left: 17px;
+  }
+  .item-img {
+    height: 188px;
+  }
+  .item-heading {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 26px;
+  }
+  .item-text {
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .item-close-btn {
+    top: 17px;
+    right: 12px;
+  }
+  .item-buttons {
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .item-button {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    padding: 9px 20px;
+  }
+  .item-link {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    padding: 9px 20px;
   }
 }
