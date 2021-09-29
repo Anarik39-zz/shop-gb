@@ -1,0 +1,42 @@
+@mixin pink-button {
+  color: #f26376;
+  border: 1px solid #ff6a6a;
+}
+@mixin item-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+@mixin item-button {
+  font-family: Lato;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #a4a4a4;
+  padding: 16px 40px;
+}
+
+@mixin form-heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+@mixin form-input {
+  margin-top: 20px;
+  height: 45px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  padding-left: 17px;
+  outline: none;
+  &::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+  }
+}
